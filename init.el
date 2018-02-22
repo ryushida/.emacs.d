@@ -51,6 +51,11 @@
   :config
   (elfeed-org))
 
+(use-package eyebrowse
+  :ensure t
+  :config
+  (eyebrowse-mode t))
+
 (use-package google-translate
   :ensure t
   :config
@@ -59,7 +64,9 @@
   (setq google-translate-show-phonetic t))
 
 (use-package haskell-mode
-:ensure t)
+  :ensure t
+  :config
+  (define-key haskell-mode-map (kbd "C-c C-l") 'haskell-process-load-or-reload))
 
 (use-package hydra
   :ensure t
