@@ -305,7 +305,7 @@ T - tag prefix
 	   "* TODO %?\n")))
 
 ;; http://orgmode.org/worg/org-contrib/
-;(require 'org-checklist)
+(require 'org-checklist)
 
 (setq org-refile-targets '((org-agenda-files :maxlevel . 6)))
 
