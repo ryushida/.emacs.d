@@ -2,6 +2,7 @@
 
 1. Install emacs and emacs-mozc-ut2 with package manager.
 2. Install a2ps for org-checklist
+3. Install [cmigemo](https://github.com/koron/cmigemo/) (Could also try installing with package manager)
 2. Clone Repo
 3. Open emacs and watch it install everything itself
    1. If it gives warning about custom.el not existing, restart emacs
