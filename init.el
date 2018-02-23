@@ -63,11 +63,6 @@
 	'(("en" . "ja") ("ja" . "en") ("en" . "zh-CN") ("ja" . "zh-CN") ("en" . "zh-TW") ("ja" . "zh-TW")))
   (setq google-translate-show-phonetic t))
 
-(use-package haskell-mode
-  :ensure t
-  :config
-  (define-key haskell-mode-map (kbd "C-c C-l") 'haskell-process-load-or-reload))
-
 (use-package hydra
   :ensure t
   :config
