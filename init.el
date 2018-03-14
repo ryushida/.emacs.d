@@ -301,9 +301,11 @@
   (global-set-key (kbd "C-c c") 'org-capture)
 
   (setq org-capture-templates
-	'(("i" "idea" entry (file+headline "~/org/incubator.org" "Inbox")
+	'(("n" "note" entry (file+datetree "~/org/notes.org")
 	   "* %?\n")
-	  ("p" "programming project idea" entry (file+headline "~/org/programming.org" "Project Ideas")
+	  ("i" "idea" entry (file+headline "~/org/incubator.org" "Inbox")
+	   "* %?\n")
+	  ("p" "proogramming project idea" entry (file+headline "~/org/programming.org" "Project Ideas")
 	   "* %?\n")
 	  ("j" "journal" entry (file+datetree "~/org/journal.org")
 	   "* %?\n  Entered on %U\n")
@@ -313,8 +315,8 @@
 	   "* TODO %?\n")
 	  ("k" "今日よかったこと" entry (file+datetree "~/org/journal.org")
 	   "* 今日よかったこと\n** %?\n** \n** \n  Entered on %U\n")
-	  ("u" "quote" entry (file+datetree "~/org/quotes.org")
-	   "* %?\n Source: ")
+	  ("u" "quote" entry (file+datetree "~/org/notes.org")
+	   "* %? :quote:\n Source: ")
 	  ("d" "daily routine" entry (file+headline "~/org/routines.org" "Daily")
 	   "* TODO %?\n")))
 
