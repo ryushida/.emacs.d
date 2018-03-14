@@ -371,3 +371,5 @@ initial-scratch-message nil)
 (require 'mozc)  ; or (load-file "/path/to/mozc.el")
 (setq default-input-method "japanese-mozc")
 (setq mozc-candidate-style 'echo-area)
+
+(global-set-key (kbd "C-c l") 'org-store-link)
