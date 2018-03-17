@@ -259,6 +259,11 @@
   :config
   (add-to-list 'auto-mode-alist '("\\.epub\\'" . nov-mode)))
 
+(use-package org-board
+  :ensure t
+  :config
+  (global-set-key (kbd "C-c o") org-board-keymap))
+
 (use-package org-bullets
   :ensure t
   :config
