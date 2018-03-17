@@ -314,12 +314,14 @@
 	  ("t" "task" entry (file+headline "~/org/organizer.org" "Tasks")
 	   "* TODO %?\n")
 	  ("e" "entertainment (検索してみたいキーワード、動画、記事など）" entry (file+headline "~/org/organizer.org" "Tasks")
-	   "* TODO %? :entertainment:\n")o
+	   "* TODO %? :entertainment:\n")
+	  ("d" "download" entry (file+headline "~/org/organizer.org" "Download")
+	   "* TODO %?\n")
 	  ("k" "今日よかったこと" entry (file+datetree "~/org/journal.org")
 	   "* 今日よかったこと\n** %?\n** \n** \n  Entered on %U\n")
 	  ("u" "quote" entry (file+datetree "~/org/notes.org")
 	   "* %? :quote:\n Source: ")
-	  ("d" "daily routine" entry (file+headline "~/org/routines.org" "Daily")
+	  ("r" "daily routine" entry (file+headline "~/org/routines.org" "Daily")
 	   "* TODO %?\n")))
 
 ;; http://orgmode.org/worg/org-contrib/
