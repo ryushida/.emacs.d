@@ -312,7 +312,7 @@
 	   "* %?\n")
 	  ("a" "article" entry (file+headline "~/org/organizer.org" "Read")
 	   "* TODO %?\n  :PROPERTIES:\n  :URL: \n:END:\n  Captured on %U\n")
-	  ("p" "proogramming project idea" entry (file+headline "~/org/programming.org" "Project Ideas")
+	  ("p" "programming project idea" entry (file+headline "~/org/programming.org" "Project Ideas")
 	   "* %?\n")
 	  ("j" "journal" entry (file+datetree "~/org/journal.org")
 	   "* %?\n  Entered on %U\n")
