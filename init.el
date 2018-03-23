@@ -249,6 +249,11 @@
   :config
   (move-text-default-bindings))
 
+(use-package mpdel
+  :ensure t
+  :config
+  (mpdel-mode))
+
 (use-package multiple-cursors
   :ensure t
   :config
