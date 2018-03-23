@@ -254,6 +254,9 @@
   :config
   (mpdel-mode))
 
+(use-package ivy-mpdel
+  :ensure t)
+
 (use-package multiple-cursors
   :ensure t
   :config
