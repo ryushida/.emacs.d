@@ -295,7 +295,12 @@
 	  "~/org/school.org"
           "~/org/notes.org"
           "~/org/reminders.org"))
-
+  
+(add-hook 'org-finalize-agenda-hook 'place-agenda-tags)
+  (defun place-agenda-tags ()
+    (setq org-agenda-tags-column (- 4 (window-width)))
+    (org-agenda-align-tags))
+  
 (add-hook 'org-agenda-mode-hook #'hl-line-mode 'append)
 
 (global-set-key (kbd "C-c c") 'org-capture)
