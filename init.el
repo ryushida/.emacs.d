@@ -301,7 +301,7 @@
     (setq org-agenda-tags-column (- 4 (window-width)))
     (org-agenda-align-tags))
   
-  (add-hook 'org-agenda-mode-hook #'hl-line-mode 'append)
+(add-hook 'org-agenda-mode-hook #'hl-line-mode 'append)
 
 (global-set-key (kbd "C-c c") 'org-capture)
 
