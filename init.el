@@ -280,6 +280,11 @@
 (use-package sudo-edit
   :ensure t)
 
+(use-package which-key
+  :ensure t
+  :config
+  (which-key-mode))
+
 (use-package zeal-at-point
   :ensure t)
 
