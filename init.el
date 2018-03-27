@@ -51,6 +51,13 @@
   :config
   (elfeed-org))
 
+(use-package engine-mode
+  :ensure t
+  :config
+  (setq engine/browser-function 'browse-url-firefox)
+  (defengine github
+  "https://github.com/search?ref=simplesearch&q=%s"))
+
 (use-package eyebrowse
   :ensure t
   :config
