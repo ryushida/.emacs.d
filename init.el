@@ -76,6 +76,7 @@
   (defhydra hydra-launcher (:color blue)
     ("dw" define-word-at-point "define-word-at-point")
     ("de" define-word "define-word")
+    ("gi" engine/search-github "Github")
     ("gt" google-translate-smooth-translate "google-translate-smooth-translate")
     ("z" zeal-at-point "zeal-at-point")
     ("q" nil))
