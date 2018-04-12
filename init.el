@@ -365,8 +365,7 @@
 (setq backup-directory-alist '(("" . "~/.emacs.d/backup/per-save")))
 
 (defun force-backup-of-buffer ()
-  ;; Make a special "per session" backup at the first save of each
-  ;; emacs session.
+  ;; Make a special "per session" backup at the first save of each emacs session.
   (when (not buffer-backed-up)
     ;; Override the default parameters for per-session backups.
     (let ((backup-directory-alist '(("" . "~/.emacs.d/backup/per-session")))
