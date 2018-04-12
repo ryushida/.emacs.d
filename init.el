@@ -37,12 +37,6 @@
 (use-package define-word
   :ensure t)
 
-(use-package edit-server
-  :ensure t
-  :config
-  (require 'edit-server)
-  (edit-server-start))
-
 (use-package elfeed
   :ensure t)
 
