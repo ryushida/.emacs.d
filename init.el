@@ -189,7 +189,7 @@
   ("." nil :color blue))
 
   (eval-after-load "dired" '(progn
-  (define-key dired-mode-map (kbd "M-o") 'other-window) )))
+    (define-key dired-mode-map (kbd "M-o") 'other-window) )))
 
 (use-package ivy
   :ensure t
