@@ -322,8 +322,6 @@
 	 "* TODO %?\n")
 	("e" "entertainment (検索してみたいキーワード、動画、記事など）" entry (file+headline "~/org/organizer.org" "Tasks")
 	 "* TODO %? :entertainment:\n")
-	("d" "download" entry (file+headline "~/org/organizer.org" "Download")
-	 "* TODO %?\n")
 	("k" "今日よかったこと" entry (file+datetree "~/org/journal.org")
 	 "* 今日よかったこと\n** %?\n** \n** \n  Entered on %U\n")
 	("u" "quote" entry (file+datetree "~/org/notes.org")
