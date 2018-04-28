@@ -320,6 +320,8 @@
 	 "* TODO %?\n")
 	("t" "task" entry (file+headline "~/org/organizer.org" "Tasks")
 	 "* TODO %?\n")
+	("d" "done" entry (file+datetree "~/org/done.org")
+	 "* %?\n")
 	("e" "entertainment (検索してみたいキーワード、動画、記事など）" entry (file+headline "~/org/organizer.org" "Tasks")
 	 "* TODO %? :entertainment:\n")
 	("k" "今日よかったこと" entry (file+datetree "~/org/journal.org")
