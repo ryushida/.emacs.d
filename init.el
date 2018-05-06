@@ -24,6 +24,9 @@
   :config
   (global-set-key (kbd "M-o") 'ace-window))
 
+(use-package alert
+  :ensure t)
+
 (use-package avy
   :ensure t
   :bind* ("C-." . avy-goto-char-timer)
@@ -272,6 +275,9 @@
   :ensure t
   :mode (("\\.pdf\\'" . pdf-view-mode)))
 
+(use-package request
+  :ensure t)
+
 (use-package sudo-edit
   :ensure t)
 
@@ -288,12 +294,16 @@
   :config
   (load-theme 'doom-one t))
 
+(when (file-exists-p "~/emacsConfig/org-gcal.el")
+  (load-file "~/emacsConfig/org-gcal.el"))
+
 (setq org-agenda-files	
         '("~/org/organizer.org"
 	  "~/org/programming.org"
 	  "~/org/routines.org"
 	  "~/org/school.org"
           "~/org/notes.org"
+	  "~/org/gcal.org"
           "~/org/reminders.org"))
   
 (add-hook 'org-finalize-agenda-hook 'place-agenda-tags)
