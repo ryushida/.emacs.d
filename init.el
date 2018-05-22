@@ -293,8 +293,7 @@
 	  "~/org/programming.org"
 	  "~/org/routines.org"
 	  "~/org/school.org"
-          "~/org/notes.org"
-          "~/org/reminders.org"))
+          "~/org/notes.org"))
   
 (add-hook 'org-finalize-agenda-hook 'place-agenda-tags)
   (defun place-agenda-tags ()
