@@ -292,7 +292,6 @@
         '("~/org/organizer.org"
 	  "~/org/programming.org"
 	  "~/org/routines.org"
-	  "~/org/school.org"
           "~/org/notes.org"))
   
 (add-hook 'org-finalize-agenda-hook 'place-agenda-tags)
@@ -315,8 +314,6 @@
 	 "* %?\n")
 	("j" "journal" entry (file+datetree "~/org/journal.org")
 	 "* %?\n  Entered on %U\n")
-	("s" "school task" entry (file+headline "~/org/school.org" "School Tasks")
-	 "* TODO %?\n")
 	("t" "task" entry (file+headline "~/org/organizer.org" "Tasks")
 	 "* TODO %?\n")
 	("e" "entertainment (検索してみたいキーワード、動画、記事など）" entry (file+headline "~/org/organizer.org" "Tasks")
