@@ -326,7 +326,7 @@
 ;; http://orgmode.org/worg/org-contrib/
 (require 'org-checklist)
 
-(setq org-refile-targets '((org-agenda-files :maxlevel . 6)))
+(setq org-refile-targets '((nil :maxlevel . 3) (org-agenda-files :maxlevel . 6)))
 
 (setq org-startup-truncated nil)
 
