@@ -330,6 +330,9 @@
 
 (setq org-startup-truncated nil)
 
+;; reload buffer when file has been updated
+(global-auto-revert-mode t)
+
 ;;; backups
 
 (setq version-control t     ;; Use version numbers for backups.
