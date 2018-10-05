@@ -290,9 +290,7 @@
 
 (setq org-agenda-files	
         '("~/org/organizer.org"
-	  "~/org/programming.org"
-	  "~/org/routines.org"
-          "~/org/notes.org"))
+	  "~/org/school.org"))
   
 (add-hook 'org-finalize-agenda-hook 'place-agenda-tags)
   (defun place-agenda-tags ()
