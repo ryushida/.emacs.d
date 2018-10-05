@@ -203,7 +203,8 @@
 (use-package swiper
   :ensure t
   :config
-(global-set-key (kbd "C-s") 'swiper))
+  (global-set-key (kbd "C-s") 'swiper))
+
 
 (use-package magit
   :ensure t
