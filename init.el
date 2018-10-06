@@ -205,6 +205,8 @@
   :config
   (global-set-key (kbd "C-s") 'swiper))
 
+(use-package ledger-mode
+  :ensure t)
 
 (use-package magit
   :ensure t
