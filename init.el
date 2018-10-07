@@ -42,7 +42,10 @@
   :config
   (setq engine/browser-function 'browse-url-firefox)
   (defengine github
-  "https://github.com/search?ref=simplesearch&q=%s"))
+    "https://github.com/search?ref=simplesearch&q=%s"))
+
+(use-package ess
+  :ensure t)
 
 (use-package eyebrowse
   :ensure t
