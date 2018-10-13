@@ -334,9 +334,13 @@
 ;; http://orgmode.org/worg/org-contrib/
 (require 'org-checklist)
 
-;; org-habits
+;; org-habits https://orgmode.org/manual/Tracking-your-habits.html
 (require 'org-habit)
 (add-to-list 'org-modules 'org-habit)
+(setq org-habit-graph-column 60
+      org-habit-preceding-days 14
+      org-habit-following-days 1
+      org-habit-show-habits-only-for-today nil)
 
 (setq org-refile-targets '((nil :maxlevel . 3) (org-agenda-files :maxlevel . 6)))
 
