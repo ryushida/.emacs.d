@@ -323,7 +323,7 @@
 	 "* %?\n")
 	("j" "journal" entry (file+datetree "~/org/journal.org")
 	 "* %?\n  Entered on %U\n")
-	("t" "task" entry (file+headline "~/org/organizer.org" "Tasks")
+	("t" "task" entry (file+headline "~/org/organizer.org" "Inbox")
 	 "* TODO %?\n")
 	("k" "今日よかったこと" entry (file+datetree "~/org/journal.org")
 	 "* 今日よかったこと\n** %?\n** \n** \n  Entered on %U\n")
