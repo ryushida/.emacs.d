@@ -42,7 +42,10 @@
   :config
   (setq engine/browser-function 'browse-url-firefox)
   (defengine github
-    "https://github.com/search?ref=simplesearch&q=%s"))
+    "https://github.com/search?ref=simplesearch&q=%s")
+  (defengine duckduckgo
+    "https://duckduckgo.com/?q=%s"
+    :keybinding "d"))
 
 (use-package ess
   :ensure t)
@@ -66,6 +69,7 @@
     ("dw" define-word-at-point "define-word-at-point")
     ("de" define-word "define-word")
     ("gi" engine/search-github "Github")
+    ("du" engine/search-duckduckgo "DuckDuckGo")
     ("gt" google-translate-smooth-translate "google-translate-smooth-translate")
     ("z" zeal-at-point "zeal-at-point")
     ("q" nil))
@@ -329,6 +333,10 @@
 
 ;; http://orgmode.org/worg/org-contrib/
 (require 'org-checklist)
+
+;; org-habits
+(require 'org-habit)
+(add-to-list 'org-modules 'org-habit)
 
 (setq org-refile-targets '((nil :maxlevel . 3) (org-agenda-files :maxlevel . 6)))
 
