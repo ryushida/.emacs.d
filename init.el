@@ -315,8 +315,6 @@
 (setq org-capture-templates
       '(("n" "note" entry (file+datetree "~/org/notes.org")
 	 "* %?\n")
-	("i" "idea" entry (file+headline "~/org/incubator.org" "Inbox")
-	 "* %?\n")
 	("a" "article" entry (file+headline "~/org/organizer.org" "Read")
 	 "* TODO %?\n  :PROPERTIES:\n  :URL: \n:END:\n  Captured on %U\n")
 	("p" "programming project idea" entry (file+headline "~/org/programming.org" "Project Ideas")
