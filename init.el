@@ -338,7 +338,7 @@
 (setq org-habit-graph-column 60
       org-habit-preceding-days 14
       org-habit-following-days 1
-      org-habit-show-habits-only-for-today nil)
+      org-habit-show-habits-only-for-today t)
 
 (setq org-refile-targets '((nil :maxlevel . 3) (org-agenda-files :maxlevel . 6)))
 
