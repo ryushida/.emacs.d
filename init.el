@@ -393,4 +393,6 @@ initial-scratch-message nil)
 (setq default-input-method "japanese-mozc")
 (setq mozc-candidate-style 'echo-area)
 
+(add-to-list 'default-frame-alist '(font . "Noto Sans Mono CJK JP Regular-12"))
+
 (global-set-key (kbd "C-c l") 'org-store-link)
