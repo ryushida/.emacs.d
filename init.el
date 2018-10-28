@@ -299,8 +299,8 @@
   (load-theme 'doom-one t))
 
 (setq org-agenda-files	
-        '("~/org/organizer.org"
-	  "~/org/habits.org"))
+        '("~/Documents/org/organizer.org"
+	  "~/Documentsorg/habits.org"))
   
 (add-hook 'org-finalize-agenda-hook 'place-agenda-tags)
   (defun place-agenda-tags ()
