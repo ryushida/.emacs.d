@@ -48,7 +48,9 @@
     :keybinding "d"))
 
 (use-package ess
-  :ensure t)
+  :ensure t
+  :config
+  (ess-toggle-underscore nil))
 
 (use-package eyebrowse
   :ensure t
