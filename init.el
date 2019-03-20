@@ -77,6 +77,8 @@
     ("q" nil))
   (global-set-key (kbd "C-c k") 'hydra-launcher/body)
 
+  (add-hook 'org-mode-hook 'org-indent-mode)
+
   (require 'org-agenda)
 
   (defhydra hydra-org-agenda-clock (:color blue :hint nil)
