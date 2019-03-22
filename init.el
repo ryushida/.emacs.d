@@ -37,6 +37,9 @@
 (use-package define-word
   :ensure t)
 
+(use-package elfeed
+  :ensure t)
+
 (use-package engine-mode
   :ensure t
   :config
