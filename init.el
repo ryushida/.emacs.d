@@ -40,6 +40,12 @@
 (use-package elfeed
   :ensure t)
 
+(use-package elfeed-org
+  :ensure t
+  :config
+  (elfeed-org)
+  (setq rmh-elfeed-org-files (list "~/Documents/elfeed.org")))
+
 (use-package engine-mode
   :ensure t
   :config
