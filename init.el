@@ -40,6 +40,9 @@
 (use-package elfeed
   :ensure t)
 
+(use-package ein
+  :ensure t)
+
 (use-package elfeed-org
   :ensure t
   :config
