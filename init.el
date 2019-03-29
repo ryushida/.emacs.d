@@ -316,7 +316,8 @@
 
 (setq org-agenda-files	
       '("~/Documents/Notes/memacs/photos.org_archive"
-	"~/Documents/Notes/memacs/git-dotfiles.org_archive"))
+	"~/Documents/Notes/memacs/git-dotfiles.org_archive"
+	"~/Documents/Notes/memacs/git-emacs.org_archive"))
   
 (add-hook 'org-finalize-agenda-hook 'place-agenda-tags)
   (defun place-agenda-tags ()
