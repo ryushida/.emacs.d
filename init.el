@@ -331,7 +331,7 @@
 (global-set-key (kbd "C-c c") 'org-capture)
 
 (setq org-capture-templates
-      '(("n" "note" entry (file+datetree "~/org/notes.org")
+      '(("n" "note" entry (file+olp+datetree "~/Documents/Notes/clear.org" "[DAYS] 今日をクリアにする")
 	 "* %?\n")
 	("a" "article" entry (file+headline "~/org/organizer.org" "Read")
 	 "* TODO %?\n  :PROPERTIES:\n  :URL: \n:END:\n  Captured on %U\n")
