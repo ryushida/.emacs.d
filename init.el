@@ -359,7 +359,7 @@
       org-habit-following-days 1
       org-habit-show-habits-only-for-today t)
 
-(setq org-refile-targets '((nil :maxlevel . 3) (org-agenda-files :maxlevel . 6)))
+(setq org-refile-targets '((nil :maxlevel . 4) (org-agenda-files :maxlevel . 6)))
 
 (setq org-startup-truncated nil)
 
