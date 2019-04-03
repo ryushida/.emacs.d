@@ -37,6 +37,12 @@
 (use-package define-word
   :ensure t)
 
+(use-package easy-hugo
+  :ensure t
+  :config
+  (setq easy-hugo-basedir "~/Sites/website/")
+  (setq easy-hugo-postdir "content/posts"))
+
 (use-package elfeed
   :ensure t)
 
