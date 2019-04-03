@@ -9,3 +9,12 @@
    2. Select utf-8-unix for migemo
 4. Delete directory and restart if installation hangs
 5. May need to restart for org-bullets to work
+6. Start with systemd
+
+``` shell
+systemctl enable --user emacs
+systemctl start --user emacs
+
+```
+
+Start with emacsclient -c
