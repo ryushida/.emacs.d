@@ -421,3 +421,19 @@ initial-scratch-message nil)
 (add-to-list 'default-frame-alist '(font . "Noto Sans Mono CJK JP Regular-12"))
 
 (global-set-key (kbd "C-c l") 'org-store-link)
+
+(defun open-random-output ()
+  (interactive)
+
+  ; print random number between 0 and number of files in output folder
+  (setq randomnumber (random (- (length (directory-files "~/Documents/Notes/output/")) 1)))
+
+  ; prints number of files -1
+  ;(print (- (length (directory-files "~/Documents/Notes/output/")) 1))
+  
+  ; set to random file name
+  (setq filename (nth randomnumber (directory-files "~/Documents/Notes/output/")))
+  
+  (setq filepath (concat "~/Documents/Notes/output/" filename))
+  
+  (find-file filepath))
