@@ -291,6 +291,19 @@
   :config
   (global-set-key (kbd "C-c o") org-board-keymap))
 
+(use-package org-brain
+  :ensure t
+  :init
+  (setq org-brain-path "~/Documents/Notes/orgbrain/")
+  :config
+  (setq org-id-track-globally t)
+  (setq org-id-locations-file "~/.emacs.d/.org-id-locations")
+  (push '("b" "Brain" plain (function org-brain-goto-end)
+          "* %i%?" :empty-lines 1)
+        org-capture-templates)
+  (setq org-brain-visualize-default-choices 'all)
+  (setq org-brain-title-max-length 12))
+
 (use-package org-bullets
   :ensure t
   :config
