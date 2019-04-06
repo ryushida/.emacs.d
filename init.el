@@ -340,6 +340,16 @@
   :config
   (require 'persp-projectile))
 
+(use-package smart-mode-line
+  :ensure t
+  :config
+  (sml/setup)
+  (setq rm-whitelist
+	(format "^ \\(%s\\)$"
+              (mapconcat #'identity
+                         '("GFM*")
+                         "\\|"))))
+
 (use-package sudo-edit
   :ensure t)
 
