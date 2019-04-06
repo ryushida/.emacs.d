@@ -322,7 +322,23 @@
   :config
   (projectile-mode +1)
   (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
-  (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map))
+  (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+  (setq projectile-completion-system 'ivy))
+
+(use-package counsel-projectile
+  :ensure t
+  :config
+  (counsel-projectile-mode t))
+
+(use-package perspective
+  :ensure t
+  :config
+  (persp-mode))
+
+(use-package persp-projectile
+  :ensure t
+  :config
+  (require 'persp-projectile))
 
 (use-package sudo-edit
   :ensure t)
