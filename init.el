@@ -378,6 +378,7 @@
 	"~/Documents/Notes/memacs/git-dotfiles.org_archive"
 	"~/Documents/Notes/memacs/git-emacs.org_archive"
 	"~/Documents/Notes/memacs/git-website.org_archive"
+	"~/Documents/Notes/memacs/git-til.org_archive"
 	"~/Documents/Notes/memacs/files-output.org_archive"))
   
 (add-hook 'org-finalize-agenda-hook 'place-agenda-tags)
