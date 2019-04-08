@@ -368,6 +368,7 @@
 
 (setq org-agenda-files	
       '("~/Documents/Notes/clear.org"
+	"~/Documents/Notes/habits.org"
 	"~/Documents/Notes/memacs/photos.org_archive"
 	"~/Documents/Notes/memacs/git-dotfiles.org_archive"
 	"~/Documents/Notes/memacs/git-emacs.org_archive"
