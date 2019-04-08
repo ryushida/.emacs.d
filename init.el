@@ -24,6 +24,9 @@
   :config
   (global-set-key (kbd "M-o") 'ace-window))
 
+(use-package ag
+  :ensure t)
+
 (use-package avy
   :ensure t
   :bind* ("C-." . avy-goto-char-timer)
