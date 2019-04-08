@@ -341,7 +341,9 @@
 (use-package persp-projectile
   :ensure t
   :config
-  (require 'persp-projectile))
+  (require 'persp-projectile)
+  ; Overwrote projectile-switch-project keybinding
+  (define-key projectile-mode-map (kbd "C-c p p") 'projectile-persp-switch-project))
 
 (use-package smart-mode-line
   :ensure t
