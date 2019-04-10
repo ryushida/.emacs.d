@@ -313,6 +313,9 @@
   (require 'org-bullets)
   (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
 
+(use-package org-noter
+  :ensure t)
+
 (use-package pass
   :ensure t)
 
