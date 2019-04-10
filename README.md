@@ -19,3 +19,5 @@ systemctl start --user emacs
 ```
 
 Start with emacsclient -c
+
+10. Install pdf-tools with pdf-tools-install
