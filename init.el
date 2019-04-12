@@ -58,6 +58,12 @@
   (elfeed-org)
   (setq rmh-elfeed-org-files (list "~/Documents/elfeed.org")))
 
+(use-package elpy
+  :ensure t
+  :config
+  (package-initialize)
+  (elpy-enable))
+
 (use-package engine-mode
   :ensure t
   :config
