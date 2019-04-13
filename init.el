@@ -102,6 +102,8 @@
     ("de" define-word "define-word")
     ("gi" engine/search-github "Github")
     ("du" engine/search-duckduckgo "DuckDuckGo")
+    ("wi" engine/search-wikipedia "Wikipedia (en)")
+    ("wj" engine/search-wikipedia-ja "Wikipedia (ja)")
     ("gt" google-translate-smooth-translate "google-translate-smooth-translate")
     ("z" zeal-at-point "zeal-at-point")
     ("q" nil))
