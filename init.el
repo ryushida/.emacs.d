@@ -71,7 +71,11 @@
   (defengine github
     "https://github.com/search?ref=simplesearch&q=%s")
   (defengine duckduckgo
-    "https://duckduckgo.com/?q=%s"))
+    "https://duckduckgo.com/?q=%s")
+  (defengine wikipedia
+    "http://www.wikipedia.org/search-redirect.php?language=en&go=Go&search=%s")
+  (defengine wikipedia-ja
+    "http://www.wikipedia.org/search-redirect.php?language=ja&go=Go&search=%s"))
 
 (use-package ess
   :ensure t
