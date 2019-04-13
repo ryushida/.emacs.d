@@ -71,8 +71,7 @@
   (defengine github
     "https://github.com/search?ref=simplesearch&q=%s")
   (defengine duckduckgo
-    "https://duckduckgo.com/?q=%s"
-    :keybinding "d"))
+    "https://duckduckgo.com/?q=%s"))
 
 (use-package ess
   :ensure t
