@@ -330,6 +330,9 @@
 (use-package pass
   :ensure t)
 
+(use-package pdfgrep
+  :ensure t)
+
 (use-package pdf-tools
   :ensure t
   :mode (("\\.pdf\\'" . pdf-view-mode)))
