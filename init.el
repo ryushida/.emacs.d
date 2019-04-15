@@ -493,6 +493,13 @@ initial-scratch-message nil)
 
 (add-to-list 'default-frame-alist '(font . "Noto Sans Mono CJK JP Regular-12"))
 
+(define-abbrev-table 'global-abbrev-table '(
+    ("ualpha" "α")
+    ("ubeta"  "β")
+    ("uinf" "∞")
+    ))
+(abbrev-mode 1)
+
 (global-set-key (kbd "C-c l") 'org-store-link)
 
 (defun open-random-output ()
