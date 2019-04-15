@@ -62,7 +62,9 @@
   :ensure t
   :config
   (package-initialize)
-  (elpy-enable))
+  (elpy-enable)
+  (setq elpy-rpc-python-command "python3")
+  (setq python-shell-interpreter "python3"))
 
 (use-package engine-mode
   :ensure t
