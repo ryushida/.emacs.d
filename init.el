@@ -439,6 +439,7 @@
       org-habit-show-habits-only-for-today t)
 
 (setq org-refile-targets '((nil :maxlevel . 4) (org-agenda-files :maxlevel . 4)))
+(setq org-refile-use-cache t)
 
 (setq org-startup-truncated nil)
 
