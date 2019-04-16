@@ -410,7 +410,7 @@
 (global-set-key (kbd "C-c c") 'org-capture)
 
 (setq org-capture-templates
-      '(("n" "note" entry (file+olp+datetree "~/Documents/Notes/clear.org" "[DAYS] 今日をクリアにする")
+      '(("n" "note" entry (file+datetree "~/Documents/Notes/journal.org")
 	 "* %?\n")
 	("t" "task" entry (file+olp "~/Documents/Notes/clear.org" "[ALL] DOの全体像をクリアにする" "未整理")
 	 "* TODO %?\n")
